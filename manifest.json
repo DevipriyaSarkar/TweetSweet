@@ -1,0 +1,30 @@
+{
+	"manifest_version": 2,
+
+	"name": "Tweet Sweet",
+	"description": "Lets you share text, image, link from any page to your Twitter profile and also shows you the sentiment of your tweet before posting.",
+	"version": "1.0",
+	"author": "Devipriya Sarkar",
+
+	"browser_action": {
+		"default_icon": "images/icon.png",
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+		"activeTab",
+		"https://ajax.googleapis.com/"
+	],
+	"icons": {
+		"16": "images/icon.png",
+		"32": "images/icon-32.png",
+		"64": "images/icon-64.png",
+		"128": "images/icon-128.png"
+	},
+	
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"permissions": [
+		"contextMenus"
+	]
+}
