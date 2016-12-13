@@ -9,10 +9,6 @@
 	"browser_action": {
 		"default_icon": "images/icon.png"
 	},
-	"permissions": [
-		"activeTab",
-		"https://ajax.googleapis.com/"
-	],
 	"icons": {
 		"16": "images/icon.png",
 		"32": "images/icon-32.png",
@@ -25,15 +21,13 @@
 	},
 	"permissions": [
 		"contextMenus",
-		"http://www.google.com/*"
+		"*://twitter.com/*"
 	],
 	"content_scripts": [
 		{
-			"matches": ["https://www.twitter.com/*", "http://www.twitter.com/*"],
+			"matches": ["*://twitter.com/*"],
 			"css": ["css/core.css"],
-			"js": ["js/core.js"],
-			"run_at": "document_end",
-			"all_frames": true
+			"js": ["js/core.js"]
 		}
 	]
 }
