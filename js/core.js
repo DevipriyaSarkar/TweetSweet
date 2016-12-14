@@ -40,7 +40,7 @@ function addElements(){
 	var emotionBtn = document.createElement("input");
 	emotionBtn.type = "button";
 	emotionBtn.setAttribute("id", "emotionBtn");
-	emotionBtn.setAttribute("value", "Show emotion");
+	emotionBtn.setAttribute("value", "Show sentiment");
 	emotionBtn.onclick = function() {
 		var inputText = document.getElementById("status").value;
 		var data = "key=" + API_KEY + "&lang=" + LANG_VALUE + "&txt=" + encodeURIComponent(inputText) +"&of=" + OF_VAL;
